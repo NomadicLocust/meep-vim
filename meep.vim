@@ -128,8 +128,37 @@ syn keyword schemeFunc remp remove remv remq memp assp cons*
 
 " Meep keywords
 syn keyword schemeSyntax define-param set-param!
-syn keyword schemeFunc make use-output-directory run-sources run-sources+
-syn keyword schemeFunc harminv
+syn keyword schemeFunc make help
+syn keyword schemeFunc shift-geometric-object geometric-object-duplicates geometric-objects-duplicates 
+syn keyword schemeFunc geometric-objects-lattice-duplicates 
+syn keyword schemeFunc point-in-object? point-in-periodic-object? display-geometric-object-info 
+syn keyword schemeFunc get-filename-prefix use-output-directory
+syn keyword schemeFunc volume meep-time meep-round-time
+syn keyword schemeFunc get-field-point get-epsilon-point 
+syn keyword schemeFunc flux-in-box electric-energy-in-box magnetic-energy-in-box field-energy-in-box
+syn keyword schemeFunc meep-fields-total-volume integrate-field-function max-abs-field-function integrate2-field-function
+syn keyword schemeFunc reset-meep restart-fields change-k-point! change-sources!
+syn keyword schemeFunc add-flux display-fluxes display-csv get-flux-freqs
+syn keyword schemeFunc get-fluxes save-flux load-flux load-minus-flux scale-flux-fields
+syn keyword schemeFunc add-force display-forces display-csv get-force-freqs
+syn keyword schemeFunc get-forces save-force load-force load-minus-force
+syn keyword schemeFunc dft-ldos add-near2far get-farfield output-farfields save-near2far 
+syn keyword schemeFunc load-near2far load-minus-near2far scale-near2far-fields meep-fields-solve-cw
+syn keyword schemeFunc run-until run-sources run-sources+ stop-when-fields-decayed run-k-point run-k-points
+syn keyword schemeFunc output-epsilon output-mu output-hpwr output-dpwr output-tot-pwr
+syn keyword schemeFunc output-hfield-x output-hfield-y output-hfield-z output-hfield-r output-hfield-p
+syn keyword schemeFunc output-bfield-x output-bfield-y output-bfield-z output-bfield-r output-bfield-p
+syn keyword schemeFunc output-efield-x output-efield-y output-efield-z output-efield-r output-efield-p
+syn keyword schemeFunc output-dfield-x output-dfield-y output-dfield-z output-dfield-r output-dfield-p
+syn keyword schemeFunc output-sfield-x output-sfield-y output-sfield-z output-sfield-r output-sfield-p
+syn keyword schemeFunc output-hfield output-bfield output-efield output-dfield output-sfield
+syn keyword schemeFunc output-png output-png+h5 output-field-function output-real-field-function
+syn keyword schemeFunc harminv harminv-freq harminv-freq-re harminv-freq-im harminv-Q harminv-amp harminv-err
+syn keyword schemeFunc combine-step-funcs synchronized-magnetic when-true when-false
+syn keyword schemeFunc at-every after-time before-time at-time
+syn keyword schemeFunc after-sources after-sources+ during-sources at-beginning at-end
+syn keyword schemeFunc in-volume in-point to-appended with-prefix
+syn keyword schemeFunc init-fields init-structure meep-fields-step new-meep-fields require-dimensions!
 
 " ... so that a single + or -, inside a quoted context, would not be
 " interpreted as a number (outside such contexts, it's a schemeFunc)
