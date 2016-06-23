@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	Meep Scheme
-" Last Change:	2016 June 20
+" Last Change:	2016 June 23
 " Maintainer:	(Sam H) <mail@nomloc.com>, Sergey Khorev <sergey.khorev@gmail.com>
 " Original author:	Dirk van Deun <dirk@igwe.vub.ac.be>
 
@@ -126,9 +126,25 @@ syn keyword schemeFunc hashtable-mutable? equal-hash string-hash string-ci-hash 
 syn keyword schemeFunc find for-all exists filter partition fold-left fold-right
 syn keyword schemeFunc remp remove remv remq memp assp cons*
 
+" Libctl keywords
+syn keyword schemeFunc help
+syn keyword schemeFunc vector3 vector3-x vector3-y vector3-y vector3+ vector3-
+syn keyword schemeFunc vector3-cross vector3* vector3-dot vector3-cdot vector3-norm
+syn keyword schemeFunc unit-vector3 vector3-close? vector3= rotate-vector3 vector3->exact
+syn keyword schemeFunc matrix3x3 matrix3x3-transpose matrix3x3-adjoint
+syn keyword schemeFunc matrix3x3-determinant matrix3x3-inverse
+syn keyword schemeFunc matrix3x3+ matrix3x3- matrix3x3* rotation-matrix3x3
+syn keyword schemeFunc make object-property-value
+syn keyword schemeFunc conj interpolate interpolate-uniform print begin-time
+syn keyword schemeFunc minimize minimize-multiple maximize maximize-multiple
+syn keyword schemeFunc find-root find-root-deriv
+syn keyword schemeFunc derivative deriv derivative2 deriv2
+syn keyword schemeFunc derivative-df derivative-df-err derivative-d2f derivative-d2f-err 
+syn keyword schemeFunc derivative+ deriv+ derivative- deriv-
+syn keyword schemeFunc integrate fold-left fold-right memoize
+
 " Meep keywords
 syn keyword schemeSyntax define-param set-param!
-syn keyword schemeFunc make help
 syn keyword schemeFunc shift-geometric-object geometric-object-duplicates geometric-objects-duplicates 
 syn keyword schemeFunc geometric-objects-lattice-duplicates 
 syn keyword schemeFunc point-in-object? point-in-periodic-object? display-geometric-object-info 
